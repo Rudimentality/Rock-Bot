@@ -8,7 +8,7 @@ class settings
 	currentwoots: 0
 	currentmehs: 0
 	currentcurates: 0
-	roomUrlPath: null#for lock. 'dubstep-den' in 'http://plug.dj/dubstep-den/'
+	roomUrlPath: null#for lock. 'i-heart-classic-rock' in 'http://plug.dj/ihcr/'
 	internalWaitlist: []
 	userDisconnectLog: []
 	voteLog: {}
@@ -420,7 +420,7 @@ class newSongsCommand extends Command
 		if(u.indexOf("MistaDubstep") != -1)
 			selections['channels'].push 'MistaDubstep'
 		else if(u.indexOf("Underground Promotions") != -1)
-			selections['channels'].push 'UndergroundDubstep'
+			selections['channels'].push 'UndergroundRock'
 		else
 			selections['channels'].push chooseRandom mChans	
 		selections['channels'].push chooseRandom chans
